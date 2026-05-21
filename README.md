@@ -4,26 +4,42 @@ Dashboard jurídico para gestão de defesas criminais, acompanhamento de casos, 
 
 ## Requisitos
 
-- Node.js LTS
-- npm
+- Windows
+- Acesso a internet
 
 ## Como executar
 
-Instale as dependências:
+Este projeto pode rodar sem senha de administrador. Os scripts abaixo baixam uma copia portatil do Node.js para `.tools/` quando necessario.
 
-```bash
-npm install
+Instale as dependencias:
+
+```bat
+scripts\install-deps.cmd
 ```
 
 Inicie o servidor de desenvolvimento:
 
-```bash
-npm run dev
+```bat
+scripts\dev.cmd
 ```
 
-Gere a build de produção:
+Abra no navegador:
+
+```text
+http://127.0.0.1:5173/
+```
+
+Gere a build de producao:
+
+```bat
+scripts\build.cmd
+```
+
+Se voce ja tiver Node.js e npm instalados globalmente, tambem pode usar:
 
 ```bash
+npm install
+npm run dev
 npm run build
 ```
 
